@@ -1,5 +1,6 @@
 import { appTools, defineConfig } from '@modern-js/app-tools';
 import { moduleFederationPlugin } from '@module-federation/modern-js';
+import { tailwindcssPlugin } from '@modern-js/plugin-tailwindcss';
 
 // https://modernjs.dev/en/configure/app/usage
 export default defineConfig({
@@ -10,7 +11,8 @@ export default defineConfig({
     appTools({
       bundler: 'rspack',
     }),
-    moduleFederationPlugin()
+    moduleFederationPlugin(),
+    tailwindcssPlugin()
   ],
 });
  

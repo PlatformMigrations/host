@@ -1,25 +1,20 @@
-import { Helmet } from '@modern-js/runtime/head';
-import ProviderButton from 'federation_provider/button';
-import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
+import * as React from "react"
 
-const Index = () => (
-  <div className="container-box">
-    <Helmet>
-      <link
-        rel="icon"
-        type="image/x-icon"
-        href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
-      />
-    </Helmet>
-    <main className='w-screen h-screen bg-purple-600'>
-      <h1 className='text-red-500'>kauan gay</h1>
-      <ProviderButton/>
-      <Avatar>
-        <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-        <AvatarFallback>SC</AvatarFallback>
-      </Avatar>
-    </main>
-  </div>
-);
+import { DataTableDemo } from "@/components/demo-table"
 
-export default Index;
+export default function Home() {
+  return (
+    <div className="grid grid-cols-3 gap-2 gap-y-11">
+      <div className="col-span-2">
+        <h2 className="text-4xl">My Spots</h2>
+      </div>
+      <div className="bg-zinc-100/70 rounded-3xl p-3 col-span-2">
+        <div className="rounded-2xl bg-white p-2 px-3 ">
+          <DataTableDemo />
+        </div>
+      </div>
+
+      <div className="bg-zinc-100/70 rounded-3xl p-3"></div>
+    </div>
+  )
+}

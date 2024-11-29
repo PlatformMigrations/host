@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { DataTableDemo } from "@/components/demo-table"
+import Basic  from "federation_provider/basic"
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       </div>
       <div className="bg-zinc-100/70 rounded-3xl p-3 col-span-2">
         <div className="rounded-2xl bg-white p-2 px-3 ">
-          <DataTableDemo />
+          <Basic />
         </div>
       </div>
 

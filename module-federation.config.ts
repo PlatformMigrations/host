@@ -7,5 +7,6 @@ export default createModuleFederationConfig({
   shared: {
     react: { singleton: true },
     'react-dom': { singleton: true },
+    'lucide-react': { singleton: true },
   },
 });

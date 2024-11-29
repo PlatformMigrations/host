@@ -1,1 +1,1 @@
-export declare function DataTableDemo(): import("react/jsx-runtime").JSX.Element;
+export default function DataTableDemo(): import("react/jsx-runtime").JSX.Element;

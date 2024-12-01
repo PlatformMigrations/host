@@ -4,7 +4,7 @@ import { HeaderSimple } from '@/components/ui/internal/header-simple';
 import { Content } from '@/components/ui/internal/content';
 import { Helmet } from '@modern-js/runtime/head';
 
-import "./index.css"
+import "./main.css"
 
 export default function Layout() {
   return (

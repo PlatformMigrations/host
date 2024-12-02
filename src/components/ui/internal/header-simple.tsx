@@ -5,7 +5,11 @@ import { GrAppsRounded } from "react-icons/gr";
 import { Profile } from "./profile";
 import { SlideInput } from "./slide-input";
 
+import { NavLink } from "@modern-js/runtime/router";
+
+
 export function HeaderSimple() {
+
 
 	return (
 		<header className="flex justify-between py-4 items-center w-full h-fit relative">
@@ -28,9 +32,11 @@ export function HeaderSimple() {
 						<h3 className="flex flex-col items-center bg-zinc-200/40 py-3 rounded-2xl">
 							<span className="text-sm">Sync</span>
 						</h3>
-						<h3 className="flex flex-col items-center bg-zinc-200/40 py-3 rounded-2xl">
-							<span className="text-sm">Analytics</span>
-						</h3>
+						<NavLink to={"/bi/short-term-view"}>
+							<h3 className="flex flex-col items-center bg-zinc-200/40 py-3 rounded-2xl">
+								<span className="text-sm">Analytics</span>
+							</h3>
+						</NavLink>
 						<h3 className="flex flex-col items-center bg-zinc-200/40 py-3 rounded-2xl col-start-2">
 							<span className="text-sm">Monitor</span>
 						</h3>
@@ -39,10 +45,10 @@ export function HeaderSimple() {
 			</Header.center>
 			<Header.right>
 				<div className="flex gap-4 items-center">
-					<SlideInput/>
+					<SlideInput />
 
-					<Profile/>
-					
+					<Profile />
+
 				</div>
 			</Header.right>
 		</header>

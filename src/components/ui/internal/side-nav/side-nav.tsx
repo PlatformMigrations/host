@@ -1,5 +1,5 @@
 import { IoExitOutline } from "react-icons/io5";
-import { PiHouseSimpleLight } from "react-icons/pi";
+import { PiHouseSimpleBold } from "react-icons/pi";
 import { GrAppsRounded } from "react-icons/gr";
 import { SlEnergy } from "react-icons/sl";
 import { NavItem } from "./nav-item";
@@ -18,13 +18,13 @@ export function SideNav() {
             </div>
 
             <div className="flex flex-col flex-1 items-center justify-center gap-3">
-                <NavItem factorIcon={() => <PiHouseSimpleLight />} />
-                <NavItem factorIcon={() => <GrAppsRounded />} />
-                <NavItem factorIcon={() => <SlEnergy />} />
+                <NavItem factorIcon={() => <PiHouseSimpleBold />} path="/" />
+                <NavItem factorIcon={() => <GrAppsRounded />} path="/upload" />
+                <NavItem factorIcon={() => <SlEnergy />} path="/" />
             </div>
 
             <div className="flex items-center justify-center h-24">
-                <NavItem factorIcon={() => <IoExitOutline />} />
+                <NavItem factorIcon={() => <IoExitOutline />} path="/" />
             </div>
         </div>
     )

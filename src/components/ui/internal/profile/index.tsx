@@ -18,6 +18,7 @@ import {
   DropdownMenuRadioItem
 } from "../../dropdown-menu";
 import { useState } from "react";
+import { NavLink } from "@modern-js/runtime/router";
 
 export function Profile() {
 
@@ -36,7 +37,9 @@ export function Profile() {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem>
-          Account
+          <NavLink to={"/profile"}>
+            Account
+          </NavLink>
         </DropdownMenuItem>
         <DropdownMenuSub>
           <DropdownMenuSubTrigger>Language</DropdownMenuSubTrigger>

@@ -1,1 +1,1 @@
-export declare function ChartLine(): import("react/jsx-runtime").JSX.Element;
+export declare function LineChartComponent(): import("react/jsx-runtime").JSX.Element;

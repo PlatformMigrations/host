@@ -1,3 +1,3 @@
 
-    export type RemoteKeys = 'federation_provider/button' | 'federation_provider/basic';
-    type PackageType<T> = T extends 'federation_provider/basic' ? typeof import('federation_provider/basic') :T extends 'federation_provider/button' ? typeof import('federation_provider/button') :any;
+    export type RemoteKeys = 'federation_provider/button' | 'federation_provider/basic' | 'federation_provider/card-task' | 'federation_provider/sort-list';
+    type PackageType<T> = T extends 'federation_provider/sort-list' ? typeof import('federation_provider/sort-list') :T extends 'federation_provider/card-task' ? typeof import('federation_provider/card-task') :T extends 'federation_provider/basic' ? typeof import('federation_provider/basic') :T extends 'federation_provider/button' ? typeof import('federation_provider/button') :any;

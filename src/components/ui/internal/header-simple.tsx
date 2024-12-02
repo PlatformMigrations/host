@@ -5,7 +5,7 @@ import { GrAppsRounded } from "react-icons/gr";
 import { Profile } from "./profile";
 import { SlideInput } from "./slide-input";
 
-export function HeaderSimple() {
+export function  HeaderSimple() {
 
 	return (
 		<header className="flex justify-between py-4 items-center w-full h-fit relative">
@@ -42,7 +42,7 @@ export function HeaderSimple() {
 					<SlideInput/>
 
 					<Profile/>
-					
+
 				</div>
 			</Header.right>
 		</header>

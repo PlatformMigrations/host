@@ -27,7 +27,7 @@ export function Profile() {
     <DropdownMenu>
       <DropdownMenuTrigger>
         <Avatar className="rounded-full overflow-hidden h-12 w-12">
-            <AvatarImage alt="teste" src={image} width={48} height={48} />
+            <AvatarImage alt="teste" src={image} width={48} height={48}  className="rounded-full"/>
             <AvatarFallback>IMG</AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
